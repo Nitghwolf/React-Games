@@ -1,0 +1,32 @@
+.wrapper{
+    min-height: 95vh;
+    width: 100%;
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button_start{
+    width: 200px;
+    height: 35px;
+    margin-top: 25px;
+    cursor: pointer;
+    color: aliceblue;
+    outline: none;
+    background: #222222;
+    border: 1px solid white;
+    font-size: 18px;
+}
+
+.button_start:hover{
+    background: wheat;
+    color: #222222;
+    transition: .3 all ease;
+}
+
+.winner{
+    color: aliceblue;
+    font-size: 2rem;
+}

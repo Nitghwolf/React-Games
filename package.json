@@ -1,0 +1,15 @@
+{
+  "name": "react-games",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd backend && npm i && npx sequelize db:migrate:undo:all  &&  npx sequelize db:migrate && npx sequelize db:seed:all && cd ../frontend && npm i && npm run build",
+    "start": "cd backend && npm start",
+    "dbr": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

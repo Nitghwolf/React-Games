@@ -1,0 +1,44 @@
+.navBar{
+    min-height: 5vh;
+    font-size: 18px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: #E9967A;
+    background-color: #d7d0df;
+}
+  
+.navBarElem {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+  
+.navBarElem:hover {
+    color: #E9967A;
+}
+  
+.navBarElem:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px; /* Высота линии */
+      background-color: #9c4b30;/* Цвет подчеркивания при исчезании линии*/
+      transition: width 0.5s; /* Время эффекта */
+}
+  
+.navBarElem:hover:after {
+      content: "";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px; /* Высота линии */
+      background-color: #E9967A;/* Цвет подчеркивания при появлении линии*/
+      transition: width 0.5s;  /* Время эффекта */
+}
