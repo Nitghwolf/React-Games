@@ -14,7 +14,7 @@ const GameCard = ({Game}) => {
                     <img className="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
                     <div className="card__header-text">
                         <h3 className="card__title">{Game.title}</h3>
-                        <span className="card__status">1 hour ago</span>
+                        {/* <span className="card__status">1 hour ago</span> */}
                     </div>
                     </div>
                     <p className="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>

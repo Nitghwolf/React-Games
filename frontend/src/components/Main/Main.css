@@ -1,6 +1,5 @@
 .main-games{
-    min-height: 70vw;
-    background-color: aliceblue;
+    min-height: 50vw;
     margin: 0 auto;
     max-width: 80vw;
     width: 100%;
@@ -23,6 +22,12 @@
     padding: 4rem 5vw;
     list-style-type: none;
 }
+
+.cards li{
+    margin-bottom: 10%;
+    display: grid;
+    justify-items: center;
+}
   
 .card {
     position: relative;
@@ -31,7 +36,7 @@
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
-    width: 60%;
+    width: 80%;
 }
   
 .card__image {
