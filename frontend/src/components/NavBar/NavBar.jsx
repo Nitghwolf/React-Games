@@ -6,6 +6,7 @@ const NavBar = () => {
 
     let activeStyle = {
         textDecoration: "underline",
+        color: "red",
     };
 
     return (
@@ -17,6 +18,13 @@ const NavBar = () => {
                 className="navBarElem"
             >
                 Home
+            </NavLink>
+            <NavLink to='/registration'
+                style={({ isActive }) =>
+                isActive ? activeStyle : undefined}
+                className="navBarElem"
+            >
+                Регистрация
             </NavLink>
         </nav>
     );

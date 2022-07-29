@@ -1,3 +1,4 @@
+import Registration from 'components/Auth/Registration';
 import GameXO from 'components/game_so/GameXO/Game';
 import Main from 'components/Main/Main';
 import NavBar from 'components/NavBar/NavBar';
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/games/xo' element={<GameXO />} />
+        <Route path='/registration' element={<Registration />} />
       </Routes>
     </Provider>
   );
