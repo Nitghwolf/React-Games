@@ -1,0 +1,51 @@
+.SaperBoard{
+    display: grid;
+    justify-items: center;
+    margin: 15vw;
+}
+
+.SaperField{
+    display: flex;
+}
+
+.SaperFieldSquare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 1px;
+    background-color: #bec;
+}
+
+.SaperFieldSquare:hover{
+    cursor: pointer;
+}
+
+.SaperFieldSquareDie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 1px;
+    background-color: rgb(228, 92, 92);
+}
+
+.SaperFieldSquareDie:hover{
+    cursor: pointer;
+}
+
+.SaperFieldSquareWin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin: 1px;
+    background-color: rgb(226, 214, 43);
+}
+
+.SaperFieldSquareWin:hover{
+    cursor: pointer;
+}
