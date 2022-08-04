@@ -69,8 +69,15 @@ const SaperBoard = () => {
         setMaskField(prev => [...prev]);
     }
 
+    function startNewGame(){
+        setField(createField(size));
+        setMaskField(new Array(size * size).fill(Mask.Fill));
+        setDie(false);
+    }
+
     return (
         <div className='SaperBoard'>
+            <button className='button_start' onClick={startNewGame}>Новая игра</button>
             {dimension.map((_, y) => {
                 return (<div key={y} className="SaperField">
                     {dimension.map((_, x) => {
