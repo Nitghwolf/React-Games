@@ -15,10 +15,9 @@ const GameCard = ({Game}) => {
                     <img className="card__thumb" src={`${Game.icon}`} alt="Иконка игры" />
                     <div className="card__header-text">
                         <h3 className="card__title">{Game.title}</h3>
-                        {/* <span className="card__status">1 hour ago</span> */}
                     </div>
                     </div>
-                    <p className="card__description">Логическая игра между двумя противниками на квадратном поле 3 на 3 клетки или большего размера. Один из игроков играет «крестиками», второй - «ноликами».</p>
+                    <p className="card__description">{Game.description}</p>
                 </div>
             </NavLink>
         </li>

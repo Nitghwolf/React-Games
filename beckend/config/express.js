@@ -4,6 +4,7 @@ const session = require('express-session');
 const logger = require('morgan');
 const FileStore = require('session-file-store')(session);
 const path = require('path');
+const cors = require('cors');
 // const getUser = require('../middlewares/getUser');
 
 // Конфигурация сессии
@@ -45,6 +46,13 @@ function expressConfig(app) {
   app.use(session(sessionConfig));
 
 //   app.use(getUser);
+  const corsOptions = {
+    origin: ['http://localhost:3000', 'http://localhost:4000'],
+    optionsSuccessStatus: 200,
+    credentials: true,
+  };
+
+  app.use(cors(corsOptions));
 }
 
 module.exports = expressConfig;

@@ -4,11 +4,14 @@ const express = require("express");
 const path = require("path");
 const expressConfig = require('./config/express');
 
+const gamesApiRoutes = require("./routes/games.routes");
 
 const app = express();
-const PORT = process.env.PORT ?? 3000;
+const PORT = process.env.PORT ?? 3500;
 
 expressConfig(app);
+
+app.use("/api/games", gamesApiRoutes);
 
 app.use((error, req, res, next) => {
     console.error('Произошла ошибка', error);
