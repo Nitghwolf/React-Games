@@ -13,6 +13,10 @@ expressConfig(app);
 
 app.use("/api/games", gamesApiRoutes);
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+});
+
 app.use((error, req, res, next) => {
     console.error('Произошла ошибка', error);
     res.status(500).json({
