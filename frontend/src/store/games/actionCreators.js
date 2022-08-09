@@ -4,7 +4,7 @@ import { GET_ALL_GAMES } from "./actionTypes";
 
 export function requestGames(){
     return (dispatch) => {
-        axios.get("http://localhost:4000/api/games")
+        axios.get("/api/games")
         .then(data => {
             dispatch(addGames(data.data))
         })
