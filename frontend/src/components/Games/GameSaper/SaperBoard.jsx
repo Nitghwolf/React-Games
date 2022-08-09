@@ -91,7 +91,7 @@ const SaperBoard = () => {
                     })}
                 </div>);
             })}
-            {win && <h1>WIN!!!</h1>}
+            {/* {win && <h1>WIN!!!</h1>} */}
             {die && <h1>DIE</h1>}
         </div>
     );

@@ -1,4 +1,4 @@
-import { calculateWinner } from '../../../helper.js';
+import { calculateWinner } from '../helper.js';
 import React, { useState } from 'react';
 import Board from '../Board/Board';
 import "./Game.css";
