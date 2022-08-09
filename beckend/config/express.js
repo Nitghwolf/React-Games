@@ -27,7 +27,7 @@ function expressConfig(app) {
 
   // позволяет запрашивать статический контент
   // (файлы, которые лежат в / public) с нашего сервера
-//   app.use(express.static(path.join(__dirname, '../../frontend/build')));
+  app.use(express.static(path.join(__dirname, '../../frontend/build')));
 
   app.use(logger('dev'));
 
